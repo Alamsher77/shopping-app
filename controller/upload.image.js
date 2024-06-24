@@ -14,7 +14,7 @@ const upload = multer({storage})
 const response = (req,res)=>{
   res.json({
     success:true,
-    image_url:`https://shopping-app-production.up.railway.app/image${req.file.filename}`
+    image_url:`https://shopping-app-production.up.railway.app/image/${req.file.filename}`
   })
 }
 
