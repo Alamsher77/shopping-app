@@ -13,7 +13,7 @@ const imageDelete = async (req,res)=>{
      console.log('no image string')
      return false
    }
-console.log(responseImage)
+console.log("new massage: "+responseImage)
    return false
  
   const imagePath = `./uploads/image/${responseImage}`;
