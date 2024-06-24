@@ -4,7 +4,7 @@ import productModel from '../models/product.model.js'
 const imageDelete = async (req,res)=>{
    const findUserImage = await productModel.findOne({_id:req.body._id}) 
   
-   const responseImage = findUserImage.image.slice(28)  
+   const responseImage = findUserImage.image.slice(52)  
  
   
   const imagePath = `./uploads/image/${responseImage}`;
