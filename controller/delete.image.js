@@ -4,7 +4,7 @@ import productModel from '../models/product.model.js'
 const imageDelete = async (req,res)=>{
    const findUserImage = await productModel.findOne({_id:req.body._id}) 
   
-  const findString = 'product'
+  const findString = 'product_'
   const imageString = findUserImage.image.indexOf(findString)
   let responseImage
    if(imageString !== -1){
